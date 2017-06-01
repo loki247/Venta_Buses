@@ -1,0 +1,13 @@
+#barraSuperior{
+    background-image: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    width: auto;
+    height: 70px;
+    float: inherit;
+}
+
+#formularioBusqueda label{
+    margin-top: 50px;
+}
