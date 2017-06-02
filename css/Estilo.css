@@ -4,10 +4,28 @@
     background-size: cover;
     align-content: center;
     width: auto;
-    height: 70px;
+    height: 120px;
     float: inherit;
 }
 
-#formularioBusqueda label{
-    margin-top: 50px;
+#barraSuperior a{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#formularioBusqueda{
+    width: auto;
+    height: 200px;
+    margin-top: 70px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+#formularioPublicacion{
+    width: auto;
+    height: 200px;
+    margin-top: 70px;
+    margin-left: 250px;
+    margin-right: 250px;
 }
