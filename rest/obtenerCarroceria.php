@@ -3,9 +3,9 @@
 require ("conector.php");
 
 
-$idMarcaChasis = $_GET["ch"];
+$idMarcaCarroceria = $_GET["ca"];
 
-$sql = "CALL obtenerChasis(". $idMarcaChasis .")";
+$sql = "CALL obtenerCarroceria(". $idMarcaCarroceria .")";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
