@@ -9,14 +9,13 @@ $(document).ready(function () {
         });
     });
 
-    $.getJSON(url + "rest/obtenerChasis.php?c=" + $("#chasis").val(), function (result) {
+    $.getJSON(url + "rest/obtenerChasis.php?c=" + 1, function (result) {
         $.each(result, function (i, field) {
-            $("#chasis").change(function () {
-                console.log($("#chasis").val());
-                $("#modeloChasis").append("<option value='" + field.idMarcaChasis + "' data-icon='img/Logos_chasis/"+ field.idMarcaChasis+".png'>" + field.marca + "</option>");
-
+            //$("#chasis").change(function () {
+               // console.log($("#chasis").val());
+                $("#modeloChasis").append("<option value='" + field.idChasis + "'>" + field.modelo + "</option>");
+                $('select').material_select('update');
             });
-            $('select').material_select('update');
         });
-    });
+    //});
 })
