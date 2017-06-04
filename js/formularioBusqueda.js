@@ -1,12 +1,7 @@
 $(document).ready(function() {
     var url = "http://localhost:8080/venta_buses/";
-    $("select").material_select();
 
-    for(var i=1; i<45; i++){
-        $("#anhos").append("<option value='"+ (i+1973) +"'>"+ (i+1973) +"</option>");
-        $('select').material_select('update');
-
-    }
+    $("#load").hide();
 
     $.getJSON(url + "rest/obtenerMarcaCarroceria.php", function (result) {
         $.each(result, function (i, field) {
@@ -26,6 +21,18 @@ $(document).ready(function() {
         $.each(result, function (i, field) {
             $("#region").append("<option value='" + field.idRegion + "'>" + field.nombre + "</option>");
             $('select').material_select('update');
+        });
+    });
+
+    $("#region").change(function () {
+        $("#ciudad").empty();
+        $("#load").show();
+        $.getJSON(url + "rest/obtenerCiudad.php?r=" + $("#region").val(), function (result) {
+            $.each(result, function (i, field) {
+                $("#ciudad").append("<option value='" + field.idCiudad + "'>" + field.nombre + "</option>");
+                $("#load").hide();
+                $('select').material_select('update');
+            });
         });
     });
 });

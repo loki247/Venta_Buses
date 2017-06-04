@@ -21,6 +21,7 @@
         </nav>
 
         <div id="formularioBusqueda">
+
             <script src="js/formularioBusqueda.js"></script>
 
             <div class="collapsible-header active">
@@ -36,9 +37,7 @@
 
                             <form id="porAnho">
 
-                                <select id="anhos">
-                                    <option value="0">Selecionar</option>
-                                </select>
+                                <input type="text" id="anho" name="anho" placeholder="Año Bus">
 
                                 <button class="btn waves-effect waves-light" type="submit" name="action">Buscar
                                     <i class="material-icons right"></i>
@@ -61,6 +60,10 @@
                                     <option value="0">Selecionar</option>
                                 </select>
 
+                                <button class="btn waves-effect waves-light" type="submit" name="action">Buscar
+                                    <i class="material-icons right"></i>
+                                </button>
+
                             </form>
 
                         </div>
@@ -78,6 +81,10 @@
                                     <option value="0">Selecionar</option>
                                 </select>
 
+                                <button class="btn waves-effect waves-light" type="submit" name="action">Buscar
+                                    <i class="material-icons right"></i>
+                                </button>
+
                             </form>
 
                         </div>
@@ -92,8 +99,28 @@
                             <form id="porCiudad">
 
                                 <select id="region">
-                                    <option value="0">Selecionar</option>
+                                    <option value="0">Selecionar Región</option>
                                 </select>
+
+                                <div class="preloader-wrapper small active" id="load">
+                                    <div class="spinner-layer spinner-green-only">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div><div class="gap-patch">
+                                            <div class="circle"></div>
+                                        </div><div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <select id="ciudad">
+                                    <option value="0">Selecionar Ciudad</option>
+                                </select>
+
+                                <button class="btn waves-effect waves-light" type="submit" name="action">Buscar
+                                    <i class="material-icons right"></i>
+                                </button>
 
                             </form>
 
