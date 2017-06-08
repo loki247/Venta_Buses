@@ -21,6 +21,7 @@
     </nav>
 
     <div id="resultadoBusqueda">
+        <p style="font-size: 25pt;">Resultados de la búsqueda:</p>
         <table class="bordered highlight">
 
             <?php
@@ -33,28 +34,35 @@
 
             if (mysqli_num_rows($result) > 0) {
 
-                echo "<tr>
-                        <th>Foto</th>
-                        <th>Modelo</th>
-                        <th>Año</th>
-                        <th>Valor</th>
-                        <th>Ubicación</th>
-                      </tr>";
-
                 while($row = mysqli_fetch_assoc($result)) {
                 echo "<tr>
-                        <td><a href='publicacion.php?b=". $row["idBus"] ."'><img src=". $row["foto1"] ." height='100' style='border-radius: 20px;'></a></td>
-                        <td>". $row["marcaCarrorecia"] ." " .$row["modeloCarroceria"] ."</td>
-                        <td>". $row["anho"] ."</td>
-                        <td>$". $row["valor"] ."</td>
-                        <td>". $row["nombreCiudad"] ."</td>
+                        <td style='background-color: green; font-size: 20pt;'>". $row["marcaCarrorecia"] ." " .$row["modeloCarroceria"] ."</td>
+                        <td style='background-color: green;'></td>
+                        <td style='background-color: green;'></td>
+                      </tr>
+                        
+                       <tr>
+                        <td><a href='publicacion.php?b=". $row["idBus"] ."'><img src=". $row["foto1"] ." height='200' style='border-radius: 20px;'></a></td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td style='font-size: 16pt;'><b>Año: </b>". $row["anho"] ."</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td style='font-size: 16pt;'><b>Ubicación: </b>". $row["nombreCiudad"] ."</td>
+                                </tr>
+                            </table>
+                        </td>
+                        
+                        <td style='font-size: 20pt;'><b>Valor:</b> $". $row["valor"] ."</td>
+                                
                       </tr>";
                 }
             } else {
                 echo "0 results";
             }
             ?>
-
         </table>
     </div>
 </div>
