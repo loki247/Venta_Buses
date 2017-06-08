@@ -38,3 +38,11 @@
     margin-right: 450px;
     float: left;
 }
+
+#resultadoBusqueda{
+    width: auto;
+    height: 200px;
+    margin-top: 70px;
+    margin-left: 200px;
+    margin-right: 200px;
+}

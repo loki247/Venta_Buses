@@ -35,9 +35,9 @@
                         <div class="collapsible-header"><i class="material-icons">Año</i></div>
                         <div class="collapsible-body">
 
-                            <form id="porAnho">
+                            <form id="porAnho" method="get" action="buscarPorAnho.php">
 
-                                <input type="text" id="anho" name="anho" placeholder="Año Bus">
+                                <input type="text" id="anho" name="a" placeholder="Año Bus">
 
                                 <button class="btn waves-effect waves-light" type="submit" name="action">Buscar
                                     <i class="material-icons right"></i>
