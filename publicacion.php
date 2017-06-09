@@ -105,7 +105,7 @@
                     </td>
                     
                     <td>
-                        <table>
+                        <table class='highlight'>
                             <tr>
                                 <th style='font-size: 20pt;'>Fotos:</th>
                             </tr>    
