@@ -23,7 +23,7 @@
 
 
     <div id="publicacion">
-        <p style="font-size: 20pt;">Información del Vehiculo:</p>
+        <p style="font-size: 20pt; margin-left: 20px; margin-top: 15px;">Información del Vehiculo:</p>
         <table id='contenidoPublicacion'>
     <?php
 

@@ -32,15 +32,20 @@
 
 #publicacion{
     width: auto;
-    height: 200px;
+    height: auto;
     margin-top: 70px;
-    margin-left: 50px;
-    margin-right: 450px;
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    border-style:  solid;
+    border-color: black;
+    border-width: 1px;
 }
 
 #resultadoBusqueda{
     width: auto;
-    height: 200px;
+    height: auto;
     margin-top: 70px;
     margin-left: 200px;
     margin-right: 200px;
